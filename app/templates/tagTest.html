@@ -4,17 +4,24 @@
       <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/tagTest.css') }}">
     </head>
 <body>
+    <h1>How to display a webpage</h1>
+    <p>
+        Below is the <span style="color: red">code</span> that is currently used to display this exact page
+    </p>
     <pre >
 <!--code Tag starts here -->
       <code>
-@app.route('/')
+<span style="color: orange">@app.route</span><span style="color: white">(</span><span style="color: green">'/'</span><span style="color: white">)</span>
 @app.route('/index')
 def index():
-    user = {'username': 'leon'}
+    <span style="color: red">user</span> = {'username': 'leon'}
     return render_template('tagTest.html', title='Home', user=user)
 <!--code Tag starts here -->
       </code>
     </pre>
+
+    <p>Pretty cool, huh?!</p>
+
 </body>
 
 </html>
