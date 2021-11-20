@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/tagTest.css') }}">
+    </head>
+<body>
+    <pre >
+<!--code Tag starts here -->
+      <code>
+@app.route('/')
+@app.route('/index')
+def index():
+    user = {'username': 'leon'}
+    return render_template('tagTest.html', title='Home', user=user)
+<!--code Tag starts here -->
+      </code>
+    </pre>
+</body>
+
+</html>
